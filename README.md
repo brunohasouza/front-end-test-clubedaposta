@@ -29,7 +29,7 @@ Iremos considerar que seu conhecimento em requisições HTTP (com Axios ou VueHT
 3. Utilizar o VueRouter mesmo que para criar somente uma rota.
 4. Utilizar SASS.
 
-## Requisitos opcionais que iro contar pontos
+## Requisitos opcionais que irão contar pontos
 
 1. Utilizar o Vuex pra manter algum state, mesmo que ele não seja usado em nenhum outro local.
 2. Testes e documentação.
