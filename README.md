@@ -2,7 +2,7 @@
 
 O Clube da Aposta é uma comunidade de apostadores que está em constante evolução e cada vez mais completa com a colaboração de todos os membros da equipe e também da excelente interação com os usuários! O Projeto começou com dois amigos apaixonados por futebol. Essa paixão fez com que descobríssemos em 2008 as apostas esportivas e a possibilidade de se lucrar com isso. Desde então, estamos estudando esse novo mundo como um investimento e não apenas como um jogo de sorte ou azar. Esses estudos nos fizeram desenvolver um sistema inteligente de se apostar, que garante uma ótima maneira de se ganhar dinheiro e fazer uma renda extra mensalmente e praticamente sem riscos!
 
-# Teste FrontEnd para o Clube da Aposta
+# Teste Front-end para o Clube da Aposta
 
 Essa teste consiste em entendermos um pouco mais sobre seus conhecimentos com HTML, CSS, JavaScript, VueJS 2, VueRouter, Vuex, Código responsivo, suporte a crossbrowser e lógica.
 
