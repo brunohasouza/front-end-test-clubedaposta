@@ -22,14 +22,13 @@
                     <div class="col-12 col-md-8">
                         <div class="content-left">
                             <step-by-step></step-by-step>
-                            <awards></awards>
-                            
+                            <awards></awards>                            
                             <router-view></router-view>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-3 offset-lg-1">
                         <div class="content-right">
-
+                            <next-games></next-games>
                         </div>
                     </div>
                 </div>
@@ -44,13 +43,15 @@
 <script>
 import StepByStep from './components/step-by-step/StepByStep.vue'
 import Awards from './components/awards/Awards.vue'
+import NextGames from './components/next-games/NextGames.vue'
 
 export default {
     name: 'clubedaaposta',
 
     components: {
         StepByStep,
-        Awards
+        Awards,
+        NextGames
     }
   
 }

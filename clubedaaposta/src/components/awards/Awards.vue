@@ -6,7 +6,7 @@
     <div class="awards-podium">
         <div class="award" v-for="pod in podium" :key="pod.thumb">
             <div class="row">
-                <div class="col-2">
+                <div class="col-3 col-sm-2">
                     <div class="podium">
                         <div class="podium-icon">
                             <img :src="returnSrc(pod.thumb)" alt="" srcset="">
@@ -16,9 +16,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2" v-for="(award, index) in pod.awards" :key="award.thumb">
+                <div class="col-3 col-sm-2" v-for="(award, index) in pod.awards" :key="award.thumb" :class="returnOffset(index)">
                     <div class="award-element">
-                        <span class="award-sum" v-if="index + 1 < pod.awards.length">+</span>
+                        <span class="award-sum" v-if="returnLastChild(index, pod.awards)">+</span>
                         <div class="award-icon">
                             <span><img :src="returnSrc(award.thumb)" class="img-fluid" alt=""></span>
                         </div>
@@ -38,6 +38,16 @@ export default {
     methods: {
         returnSrc(thumb) {
             return `/static/awards/${thumb}`
+        },
+
+        returnOffset(index) {
+            return {
+                'offset-3': (index + 1) % 4 === 0
+            }
+        },
+
+        returnLastChild(index, arr) {
+            return index + 1 < arr.length
         }
     },
     data() {
