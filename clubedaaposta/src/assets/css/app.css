@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #163d40;
+}
+
+p {
+    margin: 0;
+}
+
+.betfair-container {
+    display: table;
+    padding: 38px 0;
+    width: 100%;
+}
+
+.betfair-badge, .betfair-text {
+    display: table-cell;
+}
+
+.betfair-badge {
+    padding-right: 30px;
+    box-sizing: content-box;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.betfair-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content-left {
+    /* background: #f00; */
+}
+
+.content-right {
+    /* background: #00f; */
+}
+
+@media (max-width: 767px) {
+    .betfair-text {
+        text-align: left;
+    }
+}
+
+@media (max-width: 575px) {
+    .betfair-container {
+        padding: 32px 0;
+    }
+
+    .betfair-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .betfair-badge {
+        width: 48px;
+        height: 48px;
+        padding-right: 24px;
+    }
+}

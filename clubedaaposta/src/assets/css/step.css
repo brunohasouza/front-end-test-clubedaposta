@@ -1,0 +1,130 @@
+.step-container {
+    padding: 42px 15px;
+}
+
+.step-flip {
+    /* margin-right: 30px; */
+    width: 100%;
+}
+
+.step-flip img{
+    width: 100%;
+    height: auto;
+}
+
+.step-text {
+    padding: 32px 28px;
+    border-radius: 16px;
+    border: 1px solid #ff8a01;
+}
+
+.step-text p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 26px;
+}
+
+.step-title {
+    font-weight: 800;
+    font-size: 40px;
+    color: #f57940;
+    line-height: 40px;
+    margin: 0;
+}
+
+.step-text-box {
+    padding: 32px 0 24px 0;
+}
+
+.step-box .step-title {
+    padding: 16px 0 24px 0;
+}
+
+.step-text-box .step-title {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.step-subtext p {
+    color: #163d40;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.step-text-box .col-8 {
+    padding: 0;
+}
+
+.step-text-box .step-subtext p {
+    font-size: 18px;
+    padding-top: 6px;
+}
+
+.step-button {
+    padding-top: 24px;
+}
+
+.step-rules-btn,
+.step-rules-btn:focus,
+.step-rules-btn:visited,
+.step-rules-btn:active {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    color: #163d40;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 16px;
+    border:none;
+    background: #91ce5f;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.step-rules-btn:hover {
+    background: #80c04b;
+}
+
+@media (min-width: 1200px) {
+    .step-text-box {
+        display: block;
+    }
+
+    .step-box {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .step-text-box {
+        display: none;
+    }
+
+    .step-box {
+        display: block;
+    }
+
+    .step-button {
+        padding-top: 32px;
+    }
+}
+
+@media (max-width: 479px) {
+    .step-container {
+        padding: 42px 0;
+    }
+
+    .step-text {
+        padding: 16px;
+    }
+
+    .step-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
