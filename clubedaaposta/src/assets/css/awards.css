@@ -1,4 +1,8 @@
-.awards-title {    
+.awards-container {    
+    color: #888;
+}
+
+.awards-title {
     padding-bottom: 42px;
 }
 
@@ -7,4 +11,93 @@
     font-weight: 800;
     color: #163d40;
     margin:0;
+}
+
+.award {
+    padding-bottom: 32px;
+}
+
+.podium-icon, .podium-label, .award-icon, .award-label {
+    text-align: center;
+}
+
+.award-icon, .podium-icon {
+    height: 64px;
+    margin-bottom: 4px;
+}
+
+.podium-icon img {
+    height: 100%;
+    width: auto;
+}
+
+.podium-label p{
+    font-size: 18px;
+    line-height: 26px;
+    display: block;
+    font-weight: 700;
+}
+
+.podium-label.multirow p {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.award-element {
+    position: relative;
+}
+
+.award-icon {
+    position: relative;
+}
+
+.award-icon span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.award-label p {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #898989;
+}
+
+.award-element .award-sum {
+    position: absolute;
+    font-size: 42px;
+    color: #999;
+    line-height: 24px;
+    top: 40px;
+    margin-top: -8px;
+    right: -28px;
+}
+
+@media (max-width: 767px) {
+    .award-icon span {
+        padding: 6px;
+    }
+
+    .podium-label p  {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .award-icon span {
+        padding: 0;
+    }
+
+    .award-element .award-sum {
+        font-size: 32px;
+        width: 18px;
+        line-height: 18px;
+        margin-top: -4px;
+    }
 }
