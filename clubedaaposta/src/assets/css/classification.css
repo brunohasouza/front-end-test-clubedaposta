@@ -1,0 +1,170 @@
+.classification-container {
+    padding-bottom: 42px;
+    color: #91ce5f;
+}
+
+.classification-title {
+    margin-top: -16px;
+    padding-bottom: 42px;
+}
+
+.classification-title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 40px;
+    margin: 0;
+}
+
+.classification-title h2 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.classification-position {
+    padding-bottom: 24px;
+}
+
+.position-text {
+    margin-right: 15px;
+}
+
+.position-text p {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.position-text, .position-ribbon, .position-number {
+    display: inline-block;
+}
+
+.position-ribbon {
+    width: 56px;
+    margin-right: 15px;
+}
+
+.position-ribbon img {
+    width: 100%;
+    height: auto;
+}
+
+.position-number p{
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 800;
+    color: #e3d94d;
+}
+
+.ranking {
+    padding-bottom: 24px;
+}
+
+.ranking-text {
+    margin-bottom: 15px;
+}
+
+.ranking-text p {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.ranking-photo {
+    position: relative;
+}
+
+.ranking-photo img {
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #91ce5f;
+    margin-left: 10px;
+}
+
+.ranking-position {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #91ce5f;
+    color: #163d40;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.ranking-box {
+    display: inline-block;
+}
+
+.ranking-name {
+    margin: 0 20px;
+}
+
+.ranking-name p {
+    font-weight: 800;
+    color: #fff;
+}
+
+.ranking-money {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+
+.ranking-check, .ranking-like {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.ranking-check img, .ranking-like img {
+    width: 16px;
+    height: 16px;
+}
+
+.ranking-infos {
+    position: relative;
+    top: 14px;
+}
+
+@media (min-width: 768px) {
+    .classification-title h1 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    .position-text {
+        margin: 0;
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .position-ribbon {
+        width: 68px;
+        margin-right: 30px;
+    }
+    
+    .position-ribbon img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .position-number p{
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+}

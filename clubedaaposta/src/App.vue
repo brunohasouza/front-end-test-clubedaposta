@@ -35,7 +35,7 @@
             </div>
         </section>
         <footer>
-
+            <classification></classification>
         </footer>
     </div>
 </template>
@@ -44,6 +44,7 @@
 import StepByStep from './components/step-by-step/StepByStep.vue'
 import Awards from './components/awards/Awards.vue'
 import NextGames from './components/next-games/NextGames.vue'
+import Classification from './components/classification/Classification.vue'
 
 export default {
     name: 'clubedaaposta',
@@ -51,7 +52,8 @@ export default {
     components: {
         StepByStep,
         Awards,
-        NextGames
+        NextGames,
+        Classification
     }
   
 }
