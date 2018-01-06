@@ -15,8 +15,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.vue'
 
-console.log(store)
-
 new Vue({
   el: '#app',
   router,

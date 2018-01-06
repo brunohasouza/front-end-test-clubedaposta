@@ -9,7 +9,7 @@
                                 <img src="/static/betfair-badge.png" alt="" class="img-circle img-fluid">
                             </div>
                             <div class="betfair-text">
-                                <p>Desafio Betfair Palpites Brasileirão 2017</p>
+                                <p>Desafio Betfair Palpites Brasileirão 2017</p>                                
                             </div>
                         </div>
                     </div>
@@ -49,6 +49,7 @@ import NextGames from './next-games/NextGames.vue'
 import Classification from './classification/Classification.vue'
 
 export default {
+
     components: {
         StepByStep,
         Awards,

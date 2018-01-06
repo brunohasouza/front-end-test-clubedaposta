@@ -1,3 +1,7 @@
+.container {
+    position: relative;
+}
+
 .classification-container {
     padding-bottom: 42px;
     color: #91ce5f;
@@ -139,6 +143,16 @@
     top: 14px;
 }
 
+.axios-request {
+    position: absolute;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    bottom: 4px;
+}
+
 @media (min-width: 768px) {
     .classification-title h1 {
         font-size: 52px;
@@ -167,4 +181,10 @@
         line-height: 52px;
     }
 
+}
+
+@media (max-width: 575px) {
+    .axios-request {
+        display: none;
+    }
 }

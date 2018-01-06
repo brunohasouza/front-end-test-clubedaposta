@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <div class="axios-request">
+            {{ address }} | Latitude: {{ lat }}, Longitude: {{ lng }}
+        </div>
         <div class="classification-container">
             <div class="row">
                 <div class="col-12">
@@ -87,20 +90,33 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import { LOCATION } from "./../../http-request";
+
 export default {
     computed: {
         ...mapGetters([ 'photo', 'money', 'check', 'firstname', 'lastname', 'like', 'yourRank' ]),
     },
 
+    created() {
+        let params = {
+            address: 'Avenida Boa Viagem'
+        }
+
+        LOCATION.get('json?address=Avenida%20Boa%20Viagem')
+            .then(res => {
+                let data = res.data.results[0]
+                this.address = data.formatted_address
+                this.lat = data.geometry.location.lat
+                this.lng = data.geometry.location.lng
+            })
+            .catch(error => console.log(error))
+    },
+
     data() {
         return {
-            rank:{
-                photo: 'user-default.png',
-                name: 'Edegar Junior',
-                money: 10000,
-                check: 500,
-                like: 54
-            }
+            address: '',
+            lat: '',
+            lng: ''
         }
     }
 }
