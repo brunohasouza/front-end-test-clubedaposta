@@ -28,7 +28,6 @@ export const store = new Vuex.Store({
 
     mutations: {
         invertName: (state) => {
-            console.log(state)
             let lastname = state.user.lastname
             state.user.lastname = state.user.firstname
             state.user.firstname = lastname
