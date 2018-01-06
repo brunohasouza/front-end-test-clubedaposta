@@ -3,7 +3,7 @@
 }
 
 .games-title {
-    padding: 32px 0 42px 0;
+    padding: 32px 0;
 }
 
 .games-title h1 {
@@ -12,6 +12,10 @@
     color: #F57940;
     line-height: 50px;
     margin:0;
+}
+
+.games-element{
+    margin-bottom: 24px;
 }
 
 .game-date {
@@ -38,40 +42,57 @@
 
 .game-box {
     margin-bottom: 12px;
+    vertical-align: top;
 }
 
 .game-team {
-    display: inline-block;
+    /* display: inline-block; */
+    /* float: left; */
+    height: 100px;
 }
 
-.game-team-score, .game-draw-vs {
+.game-draw {
+    margin: 0 8px;
+    margin: 0 76px;
+}
+
+.game-team-score {
     border: 2px solid #91ce5f;
-    line-height: 16px;
+    border-radius: 4px;
+    width: 36px;
+    display: inline-block;
+    height: 36px;
+}
+
+.game-team-score p {
     font-size: 16px;
     color: #163d40;
-    padding: 8px 0;
-    width: 36px;
-    text-align: center;
-    border-radius: 4px;
-    display: inline-block;
+    line-height: 16px;
     font-weight: 700;
+    text-align: center;
+    line-height: 34px;
+}
+
+.game-draw-score {
+    padding: 16px 0;
+    text-align: center;
+    height: 36px;
+    box-sizing: content-box;
+    margin: 0 -2px;
 }
 
 .game-draw-vs {
-    border:none;
-    width: 18px;
-    font-weight: 800;
+    height: 36px;
+    padding: 6px 8px;
+    display: inline-block;
+    margin: 0 -3px;
 }
 
 .game-team-badge {
-    border: 2px solid #91ce5f;
-    background: #fff;
-    padding: 8px;
     box-sizing: border-box;
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
     text-align: center;
-    border-radius: 38px;
 }
 
 .game-team-badge img {
@@ -80,10 +101,12 @@
 }
 
 .game-crowd {
-    max-width: 64px;
+    max-width: 68px;
     margin: 0 auto;
     margin-top: 12px;
-    border-radius: 8px;
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
 }
 
 .game-crowd .progress-bar {
@@ -95,4 +118,30 @@
     width: 100%;
     text-align: center;
     display: block;
+    position: absolute;
+    font-weight: 700;
+}
+
+.game-more-btn,
+.game-more-btn:active,
+.game-more-btn:focus,
+.game-more-btn:visited {
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 22px;
+    font-weight: 700;
+    color: #163d40;
+    border-radius: 10px;
+    border: none;
+    background: #91ce5f;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.game-more-btn:hover {    
+    background: #80c04b;
 }

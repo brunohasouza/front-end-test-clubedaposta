@@ -19,14 +19,14 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8">
                         <div class="content-left">
                             <step-by-step></step-by-step>
                             <awards></awards>                            
                             <router-view></router-view>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3 offset-lg-1">
+                    <div class="col-12 col-lg-4 col-xl-3 offset-xl-1">
                         <div class="content-right">
                             <next-games></next-games>
                         </div>

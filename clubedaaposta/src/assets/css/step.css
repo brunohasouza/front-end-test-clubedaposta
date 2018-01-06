@@ -52,7 +52,7 @@
 }
 
 .step-text-box .col-8 {
-    padding: 0;
+    padding-left: 0;
 }
 
 .step-text-box .step-subtext p {
@@ -116,7 +116,7 @@
 
 @media (max-width: 479px) {
     .step-container {
-        padding: 42px 0;
+        /* padding: 0; */
     }
 
     .step-text {

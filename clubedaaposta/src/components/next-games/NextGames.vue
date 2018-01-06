@@ -5,7 +5,7 @@
     </div>
     <div class="games-list">
         <div class="row">
-            <div class="col-10 col-sm-12 offset-1 offset-sm-0" v-for="el in 5">
+            <div class="col-10 col-md-8 col-lg-12 offset-1 offset-md-2 offset-lg-0" v-for="el in 5">
                 <div class="games-element">
                     <div class="game-date">
                         <span class="game-date-icon">
@@ -14,7 +14,20 @@
                         <span class="game-date-box">{{ game.day }} {{ game.date }} - {{ game.hour }}</span>
                     </div>
                     <div class="game-box">
-                        <div class="game-team game-team1">
+                        <div class="game-team game-team2 float-right">
+                            <div class="game-team-badge">
+                                <img :src="team2Badge" alt="" class="img-fluid" srcset="">
+                            </div>
+                            <div class="game-crowd progress" :style="returnBackground(game.team2)">
+                                <div 
+                                    class="progress-bar" 
+                                    role="progressbar" 
+                                    :style="returnStyle(game.team2)"
+                                    :aria-valuenow="game.team2.crowd" 
+                                    aria-valuemin="0" aria-valuemax="100"><span :style="returnColor(game.team2.color)">{{ game.team2.crowd }}%</span></div>
+                            </div>
+                        </div>
+                        <div class="game-team game-team1 float-left">
                             <div class="game-team-badge">
                                 <img :src="team1Badge" alt="" class="img-fluid" srcset="">
                             </div>
@@ -29,15 +42,16 @@
                         </div>
                         <div class="game-team game-draw">
                             <div class="game-draw-score">
-                                <span class="game-team-score">
-                                    {{ game.draw.team1 }}
-                                </span>
-                                <span class="game-draw-vs">
-                                    X
-                                </span>
-                                <span class="game-team-score">
-                                    {{ game.draw.team2 }}
-                                </span>
+                                <div class="game-team-score">
+                                    <p>{{ game.draw.team1 }}</p>
+                                </div>
+                                <div class="game-draw-vs">
+                                    <img src="/static/versus-icon.png" alt="" srcset="">
+                                </div>
+                                <div class="game-team-score">
+                                    <p>{{ game.draw.team2 }}</p>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
                             <div class="game-crowd progress" :style="returnBackground(game.draw)">
                                 <div 
@@ -47,19 +61,6 @@
                                     :aria-valuenow="game.draw.crowd" 
                                     aria-valuemin="0" aria-valuemax="100"><span :style="returnColor(game.draw.color)">{{ game.draw.crowd }}%</span></div>
                             </div>                            
-                        </div>
-                        <div class="game-team game-team2">
-                            <div class="game-team-badge">
-                                <img :src="team2Badge" alt="" class="img-fluid" srcset="">
-                            </div>
-                            <div class="game-crowd progress" :style="returnBackground(game.team2)">
-                                <div 
-                                    class="progress-bar" 
-                                    role="progressbar" 
-                                    :style="returnStyle(game.team2)"
-                                    :aria-valuenow="game.team2.crowd" 
-                                    aria-valuemin="0" aria-valuemax="100"><span :style="returnColor(game.team2.color)">{{ game.team2.crowd }}%</span></div>
-                            </div>
                         </div>
                         <div class="clearfix"></div>
                     </div>

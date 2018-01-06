@@ -42,7 +42,8 @@ export default {
 
         returnOffset(index) {
             return {
-                'offset-3': (index + 1) % 4 === 0
+                'offset-3': (index + 1) % 4 === 0,
+                'offset-sm-0': (index + 1) % 4 === 0
             }
         },
 

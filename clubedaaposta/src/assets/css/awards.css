@@ -1,6 +1,5 @@
 .awards-container {    
     color: #888;
-    padding-bottom: 10px;
 }
 
 .awards-title {
@@ -15,7 +14,7 @@
 }
 
 .award {
-    padding-bottom: 32px;
+    padding-bottom: 42px;
 }
 
 .podium-icon, .podium-label, .award-icon, .award-label {
