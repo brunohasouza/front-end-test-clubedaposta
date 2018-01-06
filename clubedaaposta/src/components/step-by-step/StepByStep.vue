@@ -41,7 +41,7 @@
         </div>
         <div class="col-12">
             <div class="step-button">
-                <button class="step-rules-btn">Leia o Regulamento</button>
+                <router-link :to="{ name: 'regulation' }" class="step-rules-btn">Leia o Regulamento</router-link>
             </div>
         </div>
     </div>

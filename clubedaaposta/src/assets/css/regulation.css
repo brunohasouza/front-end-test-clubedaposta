@@ -1,0 +1,80 @@
+.regulation-shadow {
+    z-index: 1090;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+.regulamento-head p {
+    color: #91ce5f;
+}
+
+.regulation-box {
+    background: #fff;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 1100;
+    top: 15px;
+    width: 354px;
+    left: 50%;
+    margin-left: -177px;
+}
+
+.regulation-head {
+    background: #163d40;
+    padding: 8px 24px;
+}
+
+.regulation-head p {
+    color: #91ce5f;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.regulation-head a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.regulation-head a img {
+    width: 100%;
+    height: auto;
+}
+
+.regulation {
+    color: #163d40;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.regulation-subtitle {
+    font-weight: 600;
+    padding: 24px 0 32px 0;
+}
+
+.regulation-text {
+    padding-bottom: 32px;
+}
+
+@media (min-width: 576px) {
+    .regulation-box {
+        width: 512px;
+        margin-left: -256px;
+        top: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .regulation-box {
+        bottom: 16px;
+        overflow-y: auto;
+    }
+}
