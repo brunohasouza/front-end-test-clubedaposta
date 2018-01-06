@@ -65,7 +65,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="game-more">
-                        <button class="game-more-btn">Ver Mais</button>
+                        <button @click="invertName" class="game-more-btn">Ver Mais</button>
                     </div>
                 </div>
             </div>
@@ -75,6 +75,8 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex"
+
 export default {
     computed: {
         team2Badge: function() {
@@ -86,7 +88,8 @@ export default {
         }
     },
 
-    methods: {
+    methods: {        
+        ...mapMutations([ 'invertName' ]),
         returnStyle(team) {
             return { 
                 'width': `${team.crowd}%`,

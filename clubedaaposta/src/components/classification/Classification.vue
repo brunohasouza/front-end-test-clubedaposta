@@ -17,7 +17,7 @@
                             <img src="/static/ribbon.png" alt="">
                         </div>
                         <div class="position-number">
-                            <p>01º</p>
+                            <p>{{ `0${yourRank}`.slice(-2) }}º</p>
                         </div>
                     </div>
                 </div>
@@ -32,23 +32,23 @@
                             <div class="col-12 col-lg-6">
                                 <div class="ranking" v-for="(n, index) in 5">
                                     <div class="ranking-box ranking-photo">
-                                        <img :src="`/static/${rank.photo}`" alt="" srcset="">
+                                        <img :src="photo" alt="" srcset="">
                                         <span class="ranking-position">{{ index + 1 }}</span>
                                     </div>
                                     <div class="ranking-box ranking-name">
-                                        <p>{{ rank.name }}</p>
+                                        <p>{{ firstname }} {{ lastname }}</p>
                                     </div>
                                     <div class="ranking-box ranking-infos">
                                         <div class="ranking-money">
-                                            <p>$ {{ rank.money.toFixed(2) }}</p>
+                                            <p>$ {{ money.toFixed(2) }}</p>
                                         </div>
                                         <div class="ranking-check">
                                             <img src="/static/check.png" alt="" srcset="">
-                                            <span>{{ rank.check }}</span>
+                                            <span>{{ check }}</span>
                                         </div>
                                         <div class="ranking-like">
                                             <img src="/static/like.png" alt="" srcset="">
-                                            <span>{{ rank.like }}</span>
+                                            <span>{{ like }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -56,23 +56,23 @@
                             <div class="col-12 col-lg-6">
                                 <div class="ranking" v-for="(n, index) in 5">
                                     <div class="ranking-box ranking-photo">
-                                        <img :src="`/static/${rank.photo}`" alt="" srcset="">
+                                        <img :src="photo" alt="" srcset="">
                                         <span class="ranking-position">{{ index + 6 }}</span>
                                     </div>
                                     <div class="ranking-box ranking-name">
-                                        <p>{{ rank.name }}</p>
+                                        <p>{{ firstname }} {{ lastname }}</p>
                                     </div>
                                     <div class="ranking-box ranking-infos">
                                         <div class="ranking-money">
-                                            <p>$ {{ rank.money.toFixed(2) }}</p>
+                                            <p>$ {{ money.toFixed(2) }}</p>
                                         </div>
                                         <div class="ranking-check">
                                             <img src="/static/check.png" alt="" srcset="">
-                                            <span>{{ rank.check }}</span>
+                                            <span>{{ check }}</span>
                                         </div>
                                         <div class="ranking-like">
                                             <img src="/static/like.png" alt="" srcset="">
-                                            <span>{{ rank.like }}</span>
+                                            <span>{{ like }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +86,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
+    computed: {
+        ...mapGetters([ 'photo', 'money', 'check', 'firstname', 'lastname', 'like', 'yourRank' ]),
+    },
+
     data() {
         return {
             rank:{

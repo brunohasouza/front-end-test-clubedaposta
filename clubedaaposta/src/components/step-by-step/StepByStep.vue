@@ -21,7 +21,7 @@
                             </div>
                             <div class="col-8">
                                 <div class="step-subtext">
-                                    <p v-html="stepSubtext"></p>
+                                    <p>Pronto <strong>{{ firstname }}</strong>! Você está participando do Desafio, veja abaixo a classificação.'</p>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                     <p>Passo a Passo</p>
                 </div>
                 <div class="step-subtext">
-                    <p v-html="stepSubtext"></p>
+                    <p>Pronto <strong>{{ firstname }}</strong>! Você está participando do Desafio, veja abaixo a classificação.'</p>
                 </div>
             </div>
         </div>
@@ -50,6 +50,12 @@
 
 <script>
 export default {
+    computed: {
+        firstname: function() {
+            return this.$store.state.user.firstname
+        }
+    },
+    
     data() {
         return {
             stepText: 'O Brasileirão 2017 chegou e se você acompanha o maior campeonato do Brasil, não deixe de dar os seus palpites e concorrer a diversos prêmios!',

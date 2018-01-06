@@ -1,5 +1,8 @@
 import Vue from 'vue'
 
+// Vuex
+import { store } from './store/store'
+
 // Routes
 import VueRouter from 'vue-router'
 import { routes } from "./routes"
@@ -12,8 +15,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.vue'
 
+console.log(store)
+
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

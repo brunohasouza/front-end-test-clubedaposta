@@ -49,8 +49,6 @@ import NextGames from './next-games/NextGames.vue'
 import Classification from './classification/Classification.vue'
 
 export default {
-    name: 'clubedaaposta',
-
     components: {
         StepByStep,
         Awards,
